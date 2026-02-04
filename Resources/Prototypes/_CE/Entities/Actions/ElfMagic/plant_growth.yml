@@ -33,7 +33,7 @@
       - !type:CESpellApplyEntityEffect
         effects:
         - !type:PlantAffectGrowth
-          amount: 5.0
+          amount: 0.3
           probability: 1.0
 
 - type: entity
