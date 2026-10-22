@@ -3,6 +3,9 @@
 ce-secret-role-name-werewolf = Werewolf
 ce-secret-role-description-werewolf = Turn into a wolf under cover of night. Kill your victims. Make sure this city does not survive.
 
+ce-secret-role-name-trickster = Trickster
+ce-secret-role-description-trickster = TODO
+
 # City
 
 ce-secret-role-name-civilian = Peaceful Citizen

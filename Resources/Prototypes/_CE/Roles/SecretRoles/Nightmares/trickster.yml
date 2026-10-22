@@ -1,0 +1,27 @@
+﻿- type: secretRole
+  parent: BaseSecretRoleGuardRestricted
+  id: Trickster
+  name: ce-secret-role-name-trickster
+  description: ce-secret-role-description-trickster
+  icon: CESecretRoleIconWerewolf
+  victoryAchievement: WerewolfWin
+  skills:
+  - Murkwalker
+  - TimeSense
+  - TricksterTransformation[namemob]
+  objectives: !type:EntSelector
+    id: CEObjectiveNightmareKillPriests
+
+- type: entity
+  id: CEObjectiveNightmareKillPriests
+  name: Death to the light
+  description: There are priests of light in this city whose very existence is repugnant to your nature. Find them out and kill them.
+  components:
+  - type: Sprite
+    sprite: _CE/Interface/Icons/SecretRoles/city.rsi
+    state: priest
+  - type: CEObjective
+  - type: CEObjectiveRoleSurviveCondition
+    roles:
+    - Priest
+    invert: true
