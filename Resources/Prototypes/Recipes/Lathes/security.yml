@@ -121,11 +121,6 @@
 
 - type: latheRecipe
   parent: BaseTargetRecipe
-  id: TargetClown
-  result: TargetClown
-
-- type: latheRecipe
-  parent: BaseTargetRecipe
   id: TargetSyndicate
   result: TargetSyndicate
 
@@ -290,14 +285,6 @@
     Steel: 1000
     Glass: 500
     Plastic: 500
-
-- type: latheRecipe
-  parent: BaseWeaponRecipeSidearm
-  id: WeaponLaserSvalinn
-  result: WeaponLaserSvalinn
-  materials:
-    Steel: 2000
-    Gold: 500
 
 - type: latheRecipe
   parent: BaseWeaponRecipeSidearm

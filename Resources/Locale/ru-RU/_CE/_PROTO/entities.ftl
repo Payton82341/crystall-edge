@@ -702,13 +702,13 @@ ent-CEBiomeSpawnerLeafMaze = { ent-CEBaseBiomeSpawner }
     .desc = { ent-CEBaseBiomeSpawner.desc }
     .suffix = Leaf Maze
 
-ent-CESpawnPointGuardCommander = командир охраны
+ent-CESpawnPointGuardCommander = комендант
     .desc = { "" }
 
-ent-CESpawnPointGuard = стражник
+ent-CESpawnPointGuard = солдат
     .desc = { "" }
 
-ent-CESpawnPointInvestigator = дознаватель
+ent-CESpawnPointInvestigator = шериф
     .desc = { "" }
 
 ent-CESpawnPointGuildmaster = гильдмастер
@@ -2669,6 +2669,14 @@ ent-CEKeyGuardCage5 = { ent-CEKeyGuardBase }
     .desc = { ent-CEKeyGuardBase.desc }
     .suffix = Клетка охраны 5
 
+ent-CEKeyInvestigatorHall = { ent-CEKeyGuardBase }
+    .desc = { ent-CEKeyGuardBase.desc }
+    .suffix = Зал шерифа
+
+ent-CEKeyInvestigatorStaff = { ent-CEKeyGuardBase }
+    .desc = { ent-CEKeyGuardBase.desc }
+    .suffix = Персонал шерифа
+
 ent-CEKeyGuildLobby = { ent-CEKeyIronBlank }
     .desc = { ent-CEKeyIronBlank.desc }
     .suffix = Guild Lobby
@@ -2986,6 +2994,10 @@ ent-CEIronDoorGuardStaff = { ent-CEIronDoor }
     .desc = { ent-CEIronDoor.desc }
     .suffix = Персонал охраны
 
+ent-CEIronDoorGuardStaffMirrored = { ent-CEIronDoorMirrored }
+    .desc = { ent-CEIronDoorMirrored.desc }
+    .suffix = Персонал охраны, Отзеркалено
+
 ent-CEIronDoorGuardHeadRoom = { ent-CEIronDoor }
     .desc = { ent-CEIronDoor.desc }
     .suffix = Кабинет главы охраны
@@ -3009,6 +3021,22 @@ ent-CEIronDoorGuardCage4 = { ent-CEBaseFenceGateBig }
 ent-CEIronDoorGuardCage5 = { ent-CEBaseFenceGateBig }
     .desc = { ent-CEBaseFenceGateBig.desc }
     .suffix = Клетка охраны 5
+
+ent-CEIronDoorInvestigatorHall = { ent-CEIronDoorWindowed }
+    .desc = { ent-CEIronDoorWindowed.desc }
+    .suffix = Зал шерифа
+
+ent-CEIronDoorInvestigatorHallMirrored = { ent-CEIronDoorInvestigatorHall }
+    .desc = { ent-CEIronDoorInvestigatorHall.desc }
+    .suffix = Зал шерифа, Отзеркалено
+
+ent-CEIronDoorInvestigatorStaff = { ent-CEIronDoor }
+    .desc = { ent-CEIronDoor.desc }
+    .suffix = Персонал шерифа
+
+ent-CEIronDoorInvestigatorStaffMirrored = { ent-CEIronDoorMirrored }
+    .desc = { ent-CEIronDoorMirrored.desc }
+    .suffix = Персонал шерифа, Отзеркалено
 
 ent-CEWoodenDoorGuildLobby = { ent-CEWoodenDoorWindowed }
     .desc = { ent-CEWoodenDoorWindowed.desc }
@@ -4271,7 +4299,7 @@ ent-CENodeStabilizerSphere = сфера-стабилизатор ноды
     .desc = Большая стеклянная сфера в латунном кольце. Закреплённая и запитанная на ноде магической эссенции, она останавливает старение ноды, сохраняя её бесконечно, пока та продолжает вырабатывать эссенцию.
 
 ent-CEShadowRift = теневой разлом
-    .desc = Прореха в мироздании. На рассвете из неё выходят теневые торговцы, а с наступлением ночи ускользают обратно.
+    .desc = Прореха в мироздании. С наступлением ночи из неё выходят теневые торговцы, а на рассвете ускользают обратно.
     .suffix = Traders
 
 ent-CEActionEnterShadowRift = Войти в разлом
@@ -4450,6 +4478,14 @@ ent-CEChestFilledGuard = { ent-CEWoodenChest }
     .desc = { ent-CEWoodenChest.desc }
     .suffix = Filled, Guard
 
+ent-CEBedsideTableFilledInvestigator = { ent-CEBedsideTableWooden }
+    .desc = { ent-CEBedsideTableWooden.desc }
+    .suffix = Filled, Investigator
+
+ent-CEChestFilledInvestigator = { ent-CEChestFilledGuard }
+    .desc = { ent-CEChestFilledGuard.desc }
+    .suffix = Filled, Investigator
+
 ent-CEBedsideTableFilledGuard = { ent-CEBedsideTableWooden }
     .desc = { ent-CEBedsideTableWooden.desc }
     .suffix = Filled, Guard
@@ -4582,6 +4618,9 @@ ent-CEObjectiveBrotherhoodDebt = Должок
 ent-CEPaperBountyHunterContract = заказ
     .desc = Короткое письмо без обратного адреса.
 
+ent-CEPaperArmyOrders = приказ
+    .desc = Приказ главнокомандующего Императорской армии гарнизону поселения.
+
 ent-CEObjectiveBountyHunterEliminate = Уничтожьте братство
     .desc = Все члены братства должны быть мертвы.
 
@@ -4593,12 +4632,6 @@ ent-CEObjectiveLoverSurvive = Сохраните возлюбленному жи
 
 ent-CEObjectivePriestSurvive = Выжить
     .desc = Среди этого города есть существа, жаждающие моей смерти.
-
-ent-CEObjectiveTormentorSpite = Сорвите планы цели
-    .desc = Сделайте всё возможное, чтобы человек, которого вы тайно презираете, провалил все свои личные цели.
-
-ent-CEObjectiveTormentorSurvive = Сохраните цели жизнь
-    .desc = Ваша цель должна жить под бременем осознания собственной ничтожности.
 
 ent-CEObjectiveCityRestoreLucsonSphere = Восстановите Сферу Люксона
     .desc = Купите у Каравана теней осколки светсердца и книгу восстановления сферы, затем проведите Ритуал восстановления у Сферы Люксона, пока мрак не поглотил город.
